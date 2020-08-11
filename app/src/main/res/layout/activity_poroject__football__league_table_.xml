@@ -6,7 +6,6 @@
     android:layout_height="match_parent"
     android:layoutDirection="rtl"
     android:padding="20dp"
-    android:textDirection="rtl"
     app:cardCornerRadius="3dp"
     app:cardPreventCornerOverlap="true"
     app:cardUseCompatPadding="true"
@@ -39,7 +38,7 @@
 
                 <TextView
                     android:id="@+id/Txt_Row"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#fff"
@@ -55,7 +54,7 @@
 
                 <TextView
                     android:id="@+id/Txt_Flag"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#fff"
@@ -71,9 +70,9 @@
 
                 <TextView
                     android:id="@+id/Txt_Team"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:background="#fff"
                     android:gravity="center"
                     android:text="تیم"
@@ -87,7 +86,7 @@
 
                 <TextView
                     android:id="@+id/Txt_Game"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#fff"
@@ -104,7 +103,7 @@
 
                 <TextView
                     android:id="@+id/Txt_Win"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#fff"
@@ -121,7 +120,7 @@
 
                 <TextView
                     android:id="@+id/Txt_Lose"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#fff"
@@ -138,11 +137,12 @@
 
                 <TextView
                     android:id="@+id/Txt_Diffrential_Of_Goal"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:layout_weight="1"
+                    android:layout_weight="1.5"
                     android:background="#fff"
                     android:gravity="center"
+                    android:lines="1"
                     android:text="تفاضل گل"
                     android:textColor="#000"
                     android:textSize="16sp"
@@ -155,7 +155,7 @@
 
                 <TextView
                     android:id="@+id/Txt_Point"
-                    android:layout_width="wrap_content"
+                    android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_weight="1"
                     android:background="#fff"
@@ -180,6 +180,8 @@
             app:layout_constraintBottom_toBottomOf="parent"
             app:layout_constraintEnd_toEndOf="parent"
             app:layout_constraintStart_toStartOf="parent"
-            app:layout_constraintTop_toBottomOf="@+id/TableLayout" />
+            app:layout_constraintTop_toBottomOf="@+id/TableLayout"
+            tools:itemCount="100"
+            tools:listitem="@layout/poroject_football_league_table_data_model" />
     </LinearLayout>
 </androidx.cardview.widget.CardView>
