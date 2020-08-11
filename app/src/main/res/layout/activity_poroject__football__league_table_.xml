@@ -48,6 +48,10 @@
                     android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
 
                 <TextView
                     android:id="@+id/Txt_Flag"
@@ -60,6 +64,10 @@
                     android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
 
                 <TextView
                     android:id="@+id/Txt_Team"
@@ -72,6 +80,10 @@
                     android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
 
                 <TextView
                     android:id="@+id/Txt_Game"
@@ -85,6 +97,11 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
                 <TextView
                     android:id="@+id/Txt_Win"
                     android:layout_width="wrap_content"
@@ -96,6 +113,11 @@
                     android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
 
                 <TextView
                     android:id="@+id/Txt_Lose"
@@ -109,6 +131,11 @@
                     android:textSize="16sp"
                     android:textStyle="bold" />
 
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
+
                 <TextView
                     android:id="@+id/Txt_Diffrential_Of_Goal"
                     android:layout_width="wrap_content"
@@ -120,6 +147,11 @@
                     android:textColor="#000"
                     android:textSize="16sp"
                     android:textStyle="bold" />
+
+                <View
+                    android:layout_width="2dp"
+                    android:layout_height="match_parent"
+                    android:background="#000000" />
 
                 <TextView
                     android:id="@+id/Txt_Point"
