@@ -38,7 +38,6 @@ public class Poroject_Football_League_Table_MainActivity extends AppCompatActivi
         InitialViews();
         ControlViews();
     }
-    
     private void InitialViews() {
         RowsOfRecyclerViewsData = findViewById(R.id.RecyclerView_Data_Of_Rows);
 
