@@ -24,6 +24,12 @@ public class Poroject_Football_League_Table_Adapter extends RecyclerView.Adapter
         this.DataModels = DataModels;
     }
 
+    public void swapData(List<Poroject_Football_League_Table_DataModel> newData) {
+        DataModels.clear();
+        DataModels.addAll(newData);
+        notifyDataSetChanged();
+    }
+
     @NonNull
     @Override
     public MyViewHolder onCreateViewHolder(@NonNull ViewGroup parent, int viewType) {
