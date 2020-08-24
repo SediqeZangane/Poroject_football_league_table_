@@ -23,21 +23,22 @@ public class Poroject_Football_League_Table_MainActivity extends AppCompatActivi
         DataModels = new ArrayList<>();
         DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
         DataModels.add(new Poroject_Football_League_Table_DataModel(2, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(2, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(2, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(2, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(2, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(3, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(4, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(5, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(6, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(7, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(8, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(9, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(10, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(11, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(12, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
+        DataModels.add(new Poroject_Football_League_Table_DataModel(13, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
 
         InitialViews();
         ControlViews();
     }
+
     private void InitialViews() {
         RowsOfRecyclerViewsData = findViewById(R.id.RecyclerView_Data_Of_Rows);
 
