@@ -1,6 +1,8 @@
 package com.example.poroject_football_league_table_;
 
 import android.app.Activity;
+import android.graphics.drawable.PictureDrawable;
+import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -8,11 +10,17 @@ import android.widget.ImageView;
 import android.widget.TableRow;
 import android.widget.TextView;
 
+import java.io.InputStream;
 import java.util.List;
 
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
+
+import com.bumptech.glide.Glide;
+import com.bumptech.glide.RequestBuilder;
+import com.bumptech.glide.load.model.StreamEncoder;
+import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
 
 public class Poroject_Football_League_Table_Adapter extends RecyclerView.Adapter<Poroject_Football_League_Table_Adapter.MyViewHolder> {
 
@@ -41,7 +49,7 @@ public class Poroject_Football_League_Table_Adapter extends RecyclerView.Adapter
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) {
 //        control views
         Poroject_Football_League_Table_DataModel DATAMODEL = DataModels.get(position);
-        holder.TxtRow.setText(DATAMODEL.getRows() + "");
+        holder.TxtRow.setText(String.valueOf(DATAMODEL.getRows()));
         holder.TxtTeam.setText(DATAMODEL.getTeams() + "");
         holder.TxtGame.setText(DATAMODEL.getGames() + "");
         holder.TxtWin.setText(DATAMODEL.getWin() + "");
@@ -49,7 +57,16 @@ public class Poroject_Football_League_Table_Adapter extends RecyclerView.Adapter
         holder.TxtDiffrentialOfGoals.setText(DATAMODEL.getDifferentialOfGoals() + "");
         holder.TxtPoints.setText(DATAMODEL.getPoints() + "");
 
-        holder.ImgFlag.setImageResource(DATAMODEL.getImgresourceFLAG());
+        if (DATAMODEL.getFlagUrl() != null) {
+            if(DATAMODEL.getFlagUrl().toLowerCase().endsWith("svg")) {
+                GlideToVectorYou
+                        .init()
+                        .with(Context)
+                        .load(Uri.parse(DATAMODEL.getFlagUrl()), holder.ImgFlag);
+            }else {
+                Glide.with(holder.ImgFlag).load(DATAMODEL.getFlagUrl()).into(holder.ImgFlag);
+            }
+        }
 
 //        listener
 

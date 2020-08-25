@@ -9,6 +9,7 @@ public class Poroject_Football_League_Table_DataModel {
     private int Lose;
     private int DifferentialOfGoals;
     private int Points;
+    private String flagUrl;
 
     public Poroject_Football_League_Table_DataModel(int Rows, int ImgResource_Flags, String Teams, int Games, int win, int lose, int DifferentialOfGoals, int Points) {
         this.Rows = Rows;
@@ -19,6 +20,18 @@ public class Poroject_Football_League_Table_DataModel {
         this.Lose = lose;
         this.DifferentialOfGoals = DifferentialOfGoals;
         this.Points = Points;
+    }
+
+    public Poroject_Football_League_Table_DataModel(int Rows, int ImgResource_Flags, String Teams, int Games, int win, int lose, int DifferentialOfGoals, int Points, String flagUrl) {
+        this.Rows = Rows;
+        this.ImgResource_Flags = ImgResource_Flags;
+        this.Teams = Teams;
+        this.Games = Games;
+        this.Win = win;
+        this.Lose = lose;
+        this.DifferentialOfGoals = DifferentialOfGoals;
+        this.Points = Points;
+        this.flagUrl = flagUrl;
     }
 
     public int getRows() {
@@ -83,5 +96,9 @@ public class Poroject_Football_League_Table_DataModel {
 
     public void setPoints(int points) {
         this.Points = points;
+    }
+
+    public String getFlagUrl() {
+        return flagUrl;
     }
 }
