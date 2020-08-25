@@ -16,6 +16,6 @@ public class TableItemModel {
     private int goalDifference;
 
     public Poroject_Football_League_Table_DataModel convertToAdapterModel() {
-        return new Poroject_Football_League_Table_DataModel(points, R.drawable.ic_baseline_flag_24, team.getName(), playedGames, won, lost, goalDifference, points, team.getCrestUrl());
+        return new Poroject_Football_League_Table_DataModel(position, R.drawable.ic_baseline_flag_24, team.getName(), playedGames, won, lost, goalDifference, points, team.getCrestUrl());
     }
 }

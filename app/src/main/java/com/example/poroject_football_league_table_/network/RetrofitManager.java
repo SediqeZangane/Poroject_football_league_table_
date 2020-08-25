@@ -31,7 +31,7 @@ public class RetrofitManager {
             }
         });
         return new Retrofit.Builder()
-                .baseUrl("http://api.football-data.org")
+                .baseUrl("http://api.football-data.org/")
                 .addConverterFactory(GsonConverterFactory.create())
                 .client(builder.build())
                 .build();
