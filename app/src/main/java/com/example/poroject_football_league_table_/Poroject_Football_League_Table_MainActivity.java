@@ -31,8 +31,6 @@ public class Poroject_Football_League_Table_MainActivity extends AppCompatActivi
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_poroject__football__league_table_);
         DataModels = new ArrayList<>();
-        DataModels.add(new Poroject_Football_League_Table_DataModel(1, R.drawable.ic_baseline_flag_24, "milan", 3, 2, 1, 4, 6));
-        DataModels.add(new Poroject_Football_League_Table_DataModel(2, R.drawable.ic_baseline_flag_24, "inter", 7, 2, 5, 4, 3));
 
         // Call league table method as async and in response use data for update
         RetrofitManager.getFootballApi().getSALeagueTable().enqueue(new Callback<TableResponseModel>() {
