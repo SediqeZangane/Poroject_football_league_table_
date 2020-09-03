@@ -4,7 +4,7 @@
     android:id="@+id/Frg_Page_Two"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context="Fragment.FrgPageTwo">
+    tools:context="com.example.poroject_football_league_table_.Fragment.FrgPageTwo">
 
 
     <androidx.cardview.widget.CardView
@@ -191,7 +191,10 @@
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toBottomOf="@+id/TableLayout"
-                />
+                tools:itemCount="100"
+                tools:listitem="@layout/poroject_football_league_table_data_model">
+
+            </androidx.recyclerview.widget.RecyclerView>
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
