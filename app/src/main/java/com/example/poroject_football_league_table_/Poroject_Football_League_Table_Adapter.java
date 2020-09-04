@@ -1,7 +1,5 @@
 package com.example.poroject_football_league_table_;
 
-import android.app.Activity;
-import android.graphics.drawable.PictureDrawable;
 import android.net.Uri;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -9,25 +7,20 @@ import android.view.ViewGroup;
 import android.widget.ImageView;
 import android.widget.TableRow;
 import android.widget.TextView;
-
-import java.io.InputStream;
 import java.util.List;
-
 import androidx.annotation.NonNull;
 import androidx.cardview.widget.CardView;
 import androidx.recyclerview.widget.RecyclerView;
 
 import com.bumptech.glide.Glide;
-import com.bumptech.glide.RequestBuilder;
-import com.bumptech.glide.load.model.StreamEncoder;
 import com.github.twocoffeesoneteam.glidetovectoryou.GlideToVectorYou;
 
 public class Poroject_Football_League_Table_Adapter extends RecyclerView.Adapter<Poroject_Football_League_Table_Adapter.MyViewHolder> {
 
-    private Activity Context;
+    private android.content.Context Context;
     private List<Poroject_Football_League_Table_DataModel> DataModels;
 
-    public Poroject_Football_League_Table_Adapter(Activity Context, List<Poroject_Football_League_Table_DataModel> DataModels) {
+    public Poroject_Football_League_Table_Adapter(android.content.Context Context, List<Poroject_Football_League_Table_DataModel> DataModels) {
         this.Context = Context;
         this.DataModels = DataModels;
     }

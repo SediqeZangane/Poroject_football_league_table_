@@ -31,7 +31,7 @@
                 android:layout_marginEnd="16dp"
                 android:layout_marginStart="16dp"
                 android:baselineAligned="true"
-                app:layout_constraintBottom_toTopOf="@+id/RecyclerView_Data_Of_Rows"
+                app:layout_constraintBottom_toTopOf="@+id/RecyclerView_Data"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent">
@@ -179,7 +179,7 @@
             </TableLayout>
 
             <androidx.recyclerview.widget.RecyclerView
-                android:id="@+id/RecyclerView_Data_Of_Rows"
+                android:id="@+id/RecyclerView_Data"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
                 android:layout_margin="10dp"

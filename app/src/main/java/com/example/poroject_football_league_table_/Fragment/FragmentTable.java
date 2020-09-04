@@ -5,6 +5,9 @@ import android.os.Bundle;
 import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.fragment.app.Fragment;
+import androidx.recyclerview.widget.DefaultItemAnimator;
+import androidx.recyclerview.widget.LinearLayoutManager;
+import androidx.recyclerview.widget.RecyclerView;
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;
@@ -15,6 +18,7 @@ import android.view.ViewGroup;
 
 import com.example.poroject_football_league_table_.Poroject_Football_League_Table_Adapter;
 import com.example.poroject_football_league_table_.Poroject_Football_League_Table_DataModel;
+import com.example.poroject_football_league_table_.Poroject_Football_League_Table_MainActivity;
 import com.example.poroject_football_league_table_.R;
 import com.example.poroject_football_league_table_.models.StandingModel;
 import com.example.poroject_football_league_table_.models.TableItemModel;
@@ -31,6 +35,8 @@ import java.util.List;
  */
 public class FragmentTable extends Fragment {
     Poroject_Football_League_Table_Adapter adapterTable;
+    RecyclerView recyclerViewTable;
+    List<Poroject_Football_League_Table_DataModel> tableDataModels;
     // TODO: Rename parameter arguments, choose names that match
     // the fragment initialization parameters, e.g. ARG_ITEM_NUMBER
     private static final String ARG_PARAM1 = "param1";
@@ -98,5 +104,26 @@ public class FragmentTable extends Fragment {
                 int a = 0;
             }
         });
+        InitialViews();
+        ControlViews();
+    }
+
+    private void InitialViews() {
+        recyclerViewTable = getView().findViewById(R.id.RecyclerView_Data);
+    }
+
+    private void ControlViews() {
+        tableDataModels = new ArrayList<>();
+        tableDataModels.add(new Poroject_Football_League_Table_DataModel(1, 2, "qatar", 1, 2, 3, 4, 5, "ffff"));
+        tableDataModels.add(new Poroject_Football_League_Table_DataModel(1, 2, "qatar", 1, 2, 3, 4, 5, "ffff"));
+        adapterTable = new Poroject_Football_League_Table_Adapter(this.getContext(), tableDataModels);
+        RecyclerView.LayoutManager lManager = new LinearLayoutManager(getContext(), LinearLayoutManager.VERTICAL, false);
+        RecyclerView.ItemAnimator animator = new DefaultItemAnimator();
+
+
+        recyclerViewTable.setLayoutManager(lManager);
+        recyclerViewTable.setItemAnimator(animator);
+        recyclerViewTable.setAdapter(adapterTable);
+
     }
 }
