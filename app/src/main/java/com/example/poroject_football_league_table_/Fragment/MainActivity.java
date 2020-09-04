@@ -19,9 +19,10 @@ public class MainActivity extends AppCompatActivity {
 
     private void ControlView() {
         FragmentLeague frgLeague = FragmentLeague.newInstance();
+        FragmentTable fragmentTable=FragmentTable.newInstance();
         FragmentManager fragmentManager = getSupportFragmentManager();
         FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
-        fragmentTransaction.add(R.id.frg_holder, frgLeague);
+        fragmentTransaction.add(R.id.frg_holder, fragmentTable);
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
 
